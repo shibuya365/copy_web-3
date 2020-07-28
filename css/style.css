@@ -1,3 +1,15 @@
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.l-w100 {
+  width: 100%;
+}
+
 .t-fs10 {
   font-size: 10px;
 }
@@ -10,7 +22,11 @@
   font-size: 26px;
 }
 
-.tc-bgc-blue {
+.t-c-blue {
+  color: #6cc6c4;
+}
+
+.t-bgc-blue {
   background-color: #6cc6c4;
 }
 
@@ -18,8 +34,39 @@
   height: 10px;
 }
 
-header div img {
+.image {
   width: 260px;
   height: 45px;
 }
 
+#square {
+  width: 222;
+  text-height: 30px;
+  height: 30px;
+}
+
+button {
+  height: 70px;
+}
+
+button:hover {
+  background-color: #6cc6c4;
+}
+
+#side-menu div p {
+  color: white;
+  background-color: #6cc6c4;
+  line-height: 41px;
+  height: 41px;
+}
+
+#side-menu div li {
+  width: 95%;
+  height: 41px;
+  color: #6cc6c4;
+  border-bottom: solid 1px #6cc6c4 !important;
+}
+
+#side-menu div li a {
+  color: #515151;
+}

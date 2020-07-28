@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
-    <div id="head" class="tc-bgc-blue"></div>
-    <div class="container-lg">
-      <div class="d-flex  flex-column flex-lg-row justify-content-lg-between align-items-center">
+    <div id="head" class="t-bgc-blue"></div>
+    <div class="l-w100">
+      <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
         <img class="image" src="img/siteTitle.png">
         <div>
           <div class="t-c-blk text-center t-fs10">“地域に根付いた歯科医院” デンタル クリニック</div>
@@ -19,50 +22,51 @@
           <div id="square" class="t-c-blk text-center t-fs10 border rounded">予約受付時間 10:00～19:30 日祝 休診</div>
         </div>
       </div>
-      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
       <div class="container-lg">
         <div class="row">
-          <div class="btn col-6 col-lg">トップページHOME</div>
-          <div class="btn col-6 col-lg">医療紹介CLINIC</div>
-          <div class="btn col-6 col-lg">診療案内SERVICE</div>
-          <div class="btn col-6 col-lg">院長・スタッフ</div>
-          <div class="btn col-6 col-lg">アクセスACESS</div>
-          <!-- <button type="button" class="btn col-xs-6 col-lg btn-secondary">トップページHOME</button>
-          <button type="button" class="btn col-xs-6 col-lg btn-secondary">医療紹介CLINIC</button>
-          <button type="button" class="btn col-xs-6 col-lg btn-secondary">診療案内SERVICE</button>
-          <button type="button" class="btn col-xs-6 col-lg btn-secondary">院長・スタッフ</button>
-          <button type="button" class="btn col-xs-6 col-lg btn-secondary">アクセスACESS</button> -->
+          <button type="button" class="t-bgc-blue btn col-6 col-lg btn-secondary">トップページHOME</button>
+          <button type="button" class="t-bgc-blue btn col-6 col-lg btn-secondary">医療紹介CLINIC</button>
+          <button type="button" class="t-bgc-blue btn col-6 col-lg btn-secondary">診療案内SERVICE</button>
+          <button type="button" class="t-bgc-blue btn col-6 col-lg btn-secondary">院長・スタッフ</button>
+          <button type="button" class="t-bgc-blue btn col-6 col-lg btn-secondary">アクセスACESS</button>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="raw">
-      <div>
-        <img src="img/in01.jpg" alt="">
+  <div class="container-lg">
+    <div class="row">
+
+      <div class="col-lg order-lg-last">
+        <img class="img-fluid mx-auto d-block" src="img/in01.jpg" alt="">
         <div>
           <h3>新着情報</h3>
           <div>2012年08月01日</div>
           <div>【診療時間変更のお知らせ】長期休診の前日8月11日は、通常より1時間長く診療をすることにしました。ご予約をお待ちしております。</div>
         </div>
       </div>
-      <div>
-        <div>
-          <h2>一般歯科</h2>
-          <button>虫歯治療</button>
-          <button>歯周病治療</button>
-          <button>入れ歯</button>
-          <button>予防歯科</button>
+      <!-- <div class="col-lg"> -->
+        <div id="side-menu">
+          <div class="border rounded-lg d-flex flex-column">
+            <p>一般歯科</p>
+            <ul>
+              <li>♦︎<a href="#">虫歯治療</a></li>
+              <li>♦︎<a href="#">歯周病治療</a></li>
+              <li>♦︎<a href="#">入れ歯</a></li>
+              <li>♦︎<a href="#">予防歯科</a></li>
+            </ul>
+          </div>
+          <div class="border rounded-lg d-flex flex-column">
+            <p>審美歯科</p>
+            <ul>
+              <li>♦︎<a href="#">ホワイトニング</a></li>
+              <li>♦︎<a href="#">オールセラミック</a></li>
+              <li>♦︎<a href="#">セラミックインレー</a></li>
+              <li>♦︎<a href="#">PMTC</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h2>審美歯科</h2>
-          <button>ホワイトニング</button>
-          <button>オールセラミック</button>
-          <button>セラミックインレー</button>
-          <button>PMTC</button>
-        </div>
-      </div>
+      <!-- </div> -->
 
 
 
@@ -80,7 +84,7 @@
       <a href="">院長・スタッフ紹介</a>
       <a href="">アクセス</a>
     </div>
-    
+
   </div>
   <div class="container">
     <div class="raw">
@@ -93,4 +97,5 @@
     <div>Copyright 2012 Dental Clinic CO.,LTD All Rights Reserved.</div>
   </footer>
 </body>
+
 </html>

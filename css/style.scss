@@ -1,6 +1,19 @@
+$c-blue: #6cc6c4;
+$c-black: #515151;
+
 // ## SMACSSクラス命名規則
 // # Base – リセットCSSなど、サイト全体のスタイルを定義
+a:hover{
+  text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
 // # Layout – 位置に関する指定、頭に「l-」をつける
+.l-w100 {
+  width: 100%;
+}
 // # Module – 再利用可能なパーツ、子要素の頭には親要素の名前をつける
 // # State – LayoutやModuleが変化した状態、頭に「is-」をつける
 // # Theme – 色などの見た目に関する指定、頭に「theme-」もしくは「t-」をつける
@@ -15,9 +28,13 @@
 .t-fs26 {
   font-size: 26px;
 }
-$c_blue: ;
 
-.tc-bgc-blue {
+.t-c-blue {
+  color:  #6cc6c4;
+}
+
+
+.t-bgc-blue {
   background-color: #6cc6c4;
 }
 
@@ -36,4 +53,31 @@ $c_blue: ;
   width: 222;
   text-height: 30px;
   height: 30px;
+}
+
+button {
+  height: 70px;
+  &:hover {
+    background-color: #6cc6c4;
+  }
+}
+
+#side-menu {
+  div {
+    p {
+      color: white;
+      background-color: $c-blue;
+      line-height: 41px;
+      height: 41px;
+    }
+    li {
+      width: 95%;
+      height: 41px;
+      color: $c-blue;
+      border-bottom : solid 1px $c-blue  !important;
+      a {
+        color: $c-black;
+      }
+    }
+  }
 }

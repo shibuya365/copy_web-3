@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="t-bgc-gray">
   <header>
     <div id="head" class="t-bgc-blue"></div>
     <div class="l-w100">
@@ -37,17 +37,20 @@
   <div class="container-lg">
     <div class="row">
 
-      <div class="col-lg order-lg-last">
+      <div id="main_contents" class="col-lg order-lg-last">
         <img class="img-fluid mx-auto d-block" src="img/in01.jpg" alt="">
-        <div>
-          <h3>新着情報</h3>
-          <div>2012年08月01日</div>
-          <div>【診療時間変更のお知らせ】長期休診の前日8月11日は、通常より1時間長く診療をすることにしました。ご予約をお待ちしております。</div>
+        <div class="t-bgc-white">
+          <h6>新着情報</h6>
+          <article class="d-flex flex-column flex-lg-row">
+            <dt>2012年08月01日</dt>
+            <dd>【診療時間変更のお知らせ】長期休診の前日8月11日は、通常より1時間長く診療をすることにしました。ご予約をお待ちしております。</dd>
+          </article>
+        </div>
         </div>
       </div>
       <!-- <div class="col-lg"> -->
         <div id="side-menu">
-          <div class="border rounded-lg d-flex flex-column">
+          <div class="t-bgc-white border rounded-lg d-flex flex-column">
             <p>一般歯科</p>
             <ul>
               <li>♦︎<a href="#">虫歯治療</a></li>
@@ -56,7 +59,7 @@
               <li>♦︎<a href="#">予防歯科</a></li>
             </ul>
           </div>
-          <div class="border rounded-lg d-flex flex-column">
+          <div class="t-bgc-white border rounded-lg d-flex flex-column">
             <p>審美歯科</p>
             <ul>
               <li>♦︎<a href="#">ホワイトニング</a></li>
@@ -76,25 +79,25 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="raw">
-      <a href="">トップページ</a>
-      <a href="">医院紹介</a>
-      <a href="">診療案内</a>
-      <a href="">院長・スタッフ紹介</a>
-      <a href="">アクセス</a>
+  <div id="footer-menu" class="t-fs13px t-bgc-blue container-lg rounded-lg">
+    <div class="row">
+      <a class="p-2 text-white" href="">○　トップページ</a>
+      <a class="p-2 text-white" href="">○　医院紹介</a>
+      <a class="p-2 text-white" href="">○　診療案内</a>
+      <a class="p-2 text-white" href="">○　院長・スタッフ紹介</a>
+      <a class="p-2 text-white" href="">○　アクセス</a>
     </div>
 
   </div>
-  <div class="container">
-    <div class="raw">
-      <div>デンタル クリニック</div>
-      <div>東京都新宿区市谷左内町21-13</div>
-      <div>TEL:03-0000-0000</div>
+  <div class="container m-3">
+    <div class="d-flex flex-column flex-lg-row align-items-end justify-content-end">
+      <div class="t-fs13px">デンタル クリニック</div>
+      <div class="t-fs13px">東京都新宿区市谷左内町21-13</div>
+      <div class="t-fs13px">TEL:03-0000-0000</div>
     </div>
   </div>
   <footer>
-    <div>Copyright 2012 Dental Clinic CO.,LTD All Rights Reserved.</div>
+    <div class="t-c-blk t-fs13 text-center m-3">Copyright 2012 Dental Clinic CO.,LTD All Rights Reserved.</div>
   </footer>
 </body>
 

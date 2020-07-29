@@ -1,5 +1,6 @@
 $c-blue: #6cc6c4;
 $c-black: #515151;
+$c-gray: #f6f6f6;
 
 // ## SMACSSクラス命名規則
 // # Base – リセットCSSなど、サイト全体のスタイルを定義
@@ -13,24 +14,39 @@ li {
 // # Layout – 位置に関する指定、頭に「l-」をつける
 .l-w100 {
   width: 100%;
+  margin-right: 0;
+  margin-left: 0;
 }
 // # Module – 再利用可能なパーツ、子要素の頭には親要素の名前をつける
 // # State – LayoutやModuleが変化した状態、頭に「is-」をつける
 // # Theme – 色などの見た目に関する指定、頭に「theme-」もしくは「t-」をつける
-.t-fs10 {
-  font-size: 10px;
-}
 
 .t-c-blk {
   color: #515151;
 }
 
+.t-fs10 {
+  font-size: 10px;
+}
+
+.t-fs13px {
+  font-size: 13px;
+}
+
+
 .t-fs26 {
   font-size: 26px;
 }
 
+.t-c-white {
+  color: white;
+}
 .t-c-blue {
   color:  #6cc6c4;
+}
+
+.t-c-black {
+  color: #515151;
 }
 
 
@@ -38,6 +54,13 @@ li {
   background-color: #6cc6c4;
 }
 
+.t-bgc-white {
+  background-color: #fff;
+}
+
+.t-bgc-gray {
+  background-color: $c-gray;
+}
 // --------------------------------------------------------
 
 #head {
@@ -64,7 +87,9 @@ button {
 
 #side-menu {
   div {
+    margin: 20px;
     p {
+      padding-left: 30px;
       color: white;
       background-color: $c-blue;
       line-height: 41px;
@@ -74,10 +99,38 @@ button {
       width: 95%;
       height: 41px;
       color: $c-blue;
-      border-bottom : solid 1px $c-blue  !important;
+      border-bottom : solid 1px $c-blue;
       a {
         color: $c-black;
       }
     }
   }
+}
+
+
+#main_contents {
+  padding: 20px 10px 40px 10px;
+}
+
+h6 {
+  margin: 30px;
+  border-bottom: 3px solid $c-blue;
+}
+article {
+  margin: 10px;
+  border-bottom: 1px solid #cccccc;
+  dt {
+    margin: 15px;
+    width: 160px;
+    font-size: 13px;
+  }
+  dd {
+    margin: 20px;
+    font-size: 13px;
+  }
+}
+
+// footer
+footer {
+  border-top : solid 2px $c-blue;
 }
